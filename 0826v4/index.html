@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png?v=20250827002411?v=20250826235225" />
   <link rel="shortcut icon" href="assets/icons/favicon.ico?v=20250827002411?v=20250826235225" />
 </head>
-<body class="p-2 sm:p-4">
+<body class="p-2 sm:p-4" data-page="welcome">
 <!-- Replaced Background: Starfield -->
 <div aria-hidden="true" id="starfield">
 <div id="stars"></div>
@@ -29,37 +29,11 @@
 <header class="app-header glass-panel">
 <div class="header-row">
 <div class="username-area">
-<input autocapitalize="none" autocomplete="username" autocorrect="off" id="usernameInput" inputmode="text" name="username" placeholder="SLPR Username..." type="text" value="The_Oracle"/>
+<input autocapitalize="none" autocomplete="username" autocorrect="off" id="usernameInput" inputmode="text" name="username" placeholder="SLPR Username..." type="text"/>
 </div>
 <div class="app-view-switcher primary-switcher">
 <button id="fetchRostersButton">Rosters</button>
 <button id="fetchOwnershipButton">Ownership %</button>
-</div>
-</div>
-<div class="hidden" id="contextual-controls">
-<div class="header-row">
-<div class="custom-select-wrapper">
-<select disabled="" id="leagueSelect">
-<option>Select a league...</option>
-</select>
-</div>
-<div class="view-switcher secondary-switcher">
-<button id="positionalViewBtn">Positional</button>
-<button id="depthChartViewBtn">Lineup</button>
-</div>
-</div>
-<div class="header-row">
-<div id="positional-filters">
-<button class="filter-btn" data-position="QB">QB</button>
-<button class="filter-btn" data-position="RB">RB</button>
-<button class="filter-btn" data-position="WR">WR</button>
-<button class="filter-btn" data-position="TE">TE</button>
-<button class="filter-btn" data-position="FLX">FLX</button>
-</div>
-<div class="compare-controls">
-<button class="control-button" disabled="" id="compareButton">Preview</button>
-<button class="control-button-subtle hidden" id="clearCompareButton">Clear</button>
-</div>
 </div>
 </div>
 </header>
@@ -182,17 +156,8 @@
 <span class="kv-right"><span class="value player-adp legend-adp">ADP</span></span>
 </div></div>
 </div><div class="legend-footnote" id="rosterCardFootnote">KTC VALUE AND ADP ARE SPECIFIC TO LEAGUE SCORING / FORMAT.</div></section>
-<div class="hidden" id="loading">Loading...</div>
-<div class="hidden" id="rosterView">
-<div id="rosterContainer">
-<div id="rosterGrid"></div>
-</div>
-</div>
-<div class="hidden" id="playerListView">
-</div>
+<div id="loading" class="hidden">Loading...</div>
 </main>
-<div id="tradeSimulator">
-</div>
 </div>
 <script defer="True" src="app.js?v=20250826235225"></script></body>
 </html>
